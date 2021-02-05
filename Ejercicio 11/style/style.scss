@@ -1,0 +1,274 @@
+*
+{
+    margin: 0px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.navbar
+{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    
+    .navlogo
+    {
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    .nav-lista
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+        list-style: none;
+        margin-right: 20px;
+        overflow:  hidden;
+        li
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5%;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        :hover
+        {
+            background: blue;
+            color: white;
+            transform: scale(1.3);
+        }
+    }
+}
+
+.headerimg
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+}
+
+.logows
+{
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+    z-index: 1;
+    .logows-img
+    {
+        width: 142px;
+        height: 80px;
+    }
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .noticia-contenedor
+        {
+            height: 120px;
+            border-bottom: 1px solid black;
+            margin-top: 2px;
+
+            .noticia-imagen
+            {
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
+            }
+            .noticia-titulo
+            {
+                font-size: 25px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .noticia-parrrafo
+            {
+                font-size: 15px;
+                text-align: justify;
+            }
+        }
+    
+}
+
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+    .footerlogo
+    {
+        width: 170px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .footertexto
+    {
+        text-align: center;
+        color: white;
+    }
+
+    .footerredes
+    {
+        margin-right: 20px;
+        .footerredesiconos
+        {
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1295px)
+{
+    .headerimg
+    {
+        height: 150px;
+    }
+    main
+    {
+        justify-content: center;
+        
+    }
+    .noticia-titulo
+    {
+        font-size: 15px;
+    }
+    .noticia-parrrafo
+    {
+        font-size: 10px;
+    }
+    .logows
+    {
+        .logows-img
+        {
+            width: 71px;
+            height: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .navbar
+    {
+        height: 30px;
+        
+        .navlogo
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .nav-lista
+        {
+            margin-right: 5px;
+            li
+            {
+                margin-right: 15px;
+                font-size: 5px;
+                height: 13px;
+                margin-right: 5px;
+            }
+            :hover
+            {
+                font-size: 40%;
+            }
+        }
+    }
+    .headerimg
+    {
+        height: 60px;
+        margin-top: 30px;
+    }
+    
+    main
+    {
+        flex-direction: column;
+        align-items: center;
+        font-size: 8px;
+        margin-top: 5px;
+        .noticia-contenedor
+        {
+            height: 120px;
+            border-bottom: 1px solid black;
+            margin-top: 2px;
+
+            .noticia-imagen
+            {
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
+            }
+            .noticia-titulo
+            {
+                font-size: 7px;
+                margin-top: 10px;
+            }
+            .noticia-parrrafo
+            {
+                font-size: 3px;
+            }
+        }
+    }
+    .footer
+    {
+        height: 23px;
+        
+        .footerlogo
+        {
+            width: 42px;
+            height: 10px;
+            margin-left: 10px;
+        }
+
+       .footertexto
+        {
+            font-size: 3px;
+        }
+
+        .footerredes
+        {
+            margin-right: 10px;
+                        
+            .footerredesiconos
+            {
+                overflow: hidden;
+                width: 12px;
+                height: 12px;
+            }
+            
+        }
+    }
+    .logows
+    {
+        bottom: 20px;
+        .logows-img
+        {
+            width: 35px;
+            height: 20px;
+        }
+    }
+}

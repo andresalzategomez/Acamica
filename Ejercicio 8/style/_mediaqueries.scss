@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px)
+{
+    header
+    {
+        height: 100px;
+
+        .logo
+        {
+            float: none;
+            display: inline-block;
+        }
+        h1
+        {
+            float: none;
+            display: inline-block;
+            line-height: 0;
+        }
+        nav
+        {
+            float: none;            
+            li
+            {
+                padding-left: 0;
+                line-height: 40px;
+            }
+        }
+    }
+    main
+    {
+        padding-top: 100px;
+
+        .articleContainer
+        {
+            .articuloIzquierdo
+            {
+                float: unset;
+                width: 100%;
+            }
+
+            .articuloDerecho
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    
+}

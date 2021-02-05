@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./baserules";
+@import "./header";
+@import "./main";
+@import "./contact";
+@import "./footer";
+
+.contenedor-ppal
+{
+    position: absolute;
+    font-size: 50px;
+    top: 200px;
+    left: 200px;
+
+}

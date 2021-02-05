@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Formulario</title>
+</head>
+<body>
+    <header>
+        <img src="https://picsum.photos/600/200" alt="Imagen de Encabezado"/>
+        <h1>Blog de Andres</h1>
+        <nav id="navegacion">
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Contactos</li>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Título 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id orci volutpat, imperdiet lacus id, feugiat metus. Aliquam non iaculis leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ligula neque, congue non facilisis sed, convallis et arcu. Nulla rutrum laoreet lectus, a consequat orci. Donec ullamcorper vestibulum tincidunt. Mauris vel blandit ligula. Proin ultrices ornare purus, non molestie est tempus et. Praesent at luctus lorem, nec pellentesque magna. Maecenas dictum condimentum mollis.
+                </p>
+            </article>
+            <article>
+                <h2>Título 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id orci volutpat, imperdiet lacus id, feugiat metus. Aliquam non iaculis leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ligula neque, congue non facilisis sed, convallis et arcu. Nulla rutrum laoreet lectus, a consequat orci. Donec ullamcorper vestibulum tincidunt. Mauris vel blandit ligula. Proin ultrices ornare purus, non molestie est tempus et. Praesent at luctus lorem, nec pellentesque magna. Maecenas dictum condimentum mollis.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <form action="">
+                <div>
+                    <label for="">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Pedro" required/>
+                </div>
+                <div>
+                    <label for="">Apellido *</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Perez" required/>
+                </div>
+                <div>
+                    <label for="">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="pperez@aaa.com" required/>
+                </div>
+                <div>
+                    <label for="">Fecha de Nacimiento *</label>
+                    <input type="date" id="nacimiento" name="nacimiento" required/>
+                </div>
+                <div>
+                    <label for="">País *</label>
+                    <select name="pais" id="pais" required>
+                        <option value="sel" selected disabled>Seleccionar País</option>
+                        <option value="col">Colombia</option>
+                        <option value="arg">Argentina</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="per">Perú</option>
+                        <option value="chi">Chile</option>
+                        <option value="bol">Bolivia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Carrera *</label>
+                    <select name="carrera" id="carrera" required>
+                        <option value="sel" selected disabled>Seleccionar Carrera</option>
+                        <option value="ux-ui">UX/UI</option>
+                        <option value="dataScience">Data Science</option>
+                        <option value="webFullStack">Desarrollo Web Full Stack</option>
+                        <option value="fronEnd">FrontEnd Avanzado</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Modalidad: *</label>
+                    
+                    <input type="radio" id="modalidad" name="modalidad" value="virtual" required>
+                    <label for="">Virtual</label>
+                    <input type="radio" id="modalidad" name="modalidad" value="presencial">
+                    <label for="">Presencial</label>
+                </div>
+
+                <div>
+                    <label for="">Estás trabajando Actualmente?</label>
+                    <input type="checkbox" name="trabajo" id="trabajo">
+                </div>
+
+                <div>
+                    <label for="">Teléfono</label>
+                    <input type="number" id="telefono" name="telefono" placeholder="1234567"/>
+                </div>
+
+                <div>
+                    <label for="">Descripción Personal</label>
+                </div>
+                <div>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"></textarea>
+                </div>
+                <div>
+                    <label for="">Experiencia en Desarrollo</label>
+                    <input type="range" id="experiencia" name="experiencia" min="0" max="10"/>
+                </div>
+
+                <div>
+                    <input type="submit">
+                </div>
+                <div>
+                    <input type="reset">
+                </div>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <p> Copyrigth 2020 - Acamica</p>
+    </footer>
+</body>
+</html>

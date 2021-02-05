@@ -1,0 +1,57 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: calibri;
+}
+
+.header
+{
+    display: block;
+    border: 2px solid black;
+}
+
+#logo
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#navegacion
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.formulario
+{
+    border: 5px solid black;
+}
+li
+{
+    list-style: none;
+}
+
+.titulosRojos
+{
+    color: red;
+    font-size: 24px;
+    text-align: center;
+}
+
+.titulosPpal
+{
+    color: red;
+    font-size: 48px;
+    text-align: center;
+}
+
+.parrafo
+{
+    color: grey;
+    font-size: 16px;
+}

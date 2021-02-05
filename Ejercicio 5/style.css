@@ -1,0 +1,47 @@
+#RecPpal
+{
+    position: relative;
+    left: 20%;
+    top: 20px;
+    background-color: red;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+}
+
+#caja1
+{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 332px;
+    top: 485px;
+}
+
+#caja5
+{
+    background-color: coral;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+}
+
+#caja2
+{
+    background-color:black;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+
+#caja4
+{
+    background-color:blue;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 650px;
+    top: 650px;
+}

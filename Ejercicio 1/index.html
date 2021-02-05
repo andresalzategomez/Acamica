@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Andrés</title>
+    <style>
+        body
+        {
+            background-image: url("Fondo.jpg"); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+        }
+        h1{color: red;}
+        h6{padding-left: 20px;}
+        p
+        {
+            background-color: black;
+            color: white;
+        }
+        *{text-align: center;}
+    </style>
+    
+</head>
+<body>
+    <h1 id="nombre">Andrés Felipe Alzate Gómez</h1>
+    <h6 id="fecha_nacimiento">9 de Marzo de 1994</h6>
+    <p id="descripcion">
+        Soy Andrés Alzate, soy técnico en programación de sistemas de información y Tecnológo en Redes y Seguridad Informática.
+    </p>
+    
+</body>
+<script>
+    nombre = document.getElementById('nombre');
+    nombre.addEventListener("click", function (){alert ("Biencenido al Curso")} )
+
+    descripcion = documemnt.getElementById('descripcion');
+    descripcion.addEventListener("mouseenter", function(){
+        descripcion.style.color = "black";
+        descripcion.style.backgroundColor = "white";
+    });
+    
+    descripcion.addEventListener("mouseout", function(){
+        descripcion.style.color = "white";
+        descripcion.style.backgroundColor = "black";
+    });
+    
+</script>
+</html>

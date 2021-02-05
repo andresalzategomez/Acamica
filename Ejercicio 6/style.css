@@ -1,0 +1,94 @@
+body
+{
+    background-color: lawngreen;
+}
+
+.contenedor
+{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    transform: translate(50%);
+}
+
+svg
+{
+    position: absolute;
+    transform: scale(.9, .9);
+    
+}
+
+#punto-central
+{
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#segundero
+{
+    position: absolute;
+    left: 50.5%;
+    top: 50%;
+    width: 5px;
+    height: 350px;  
+    background-color: black;
+    animation-name: segunderoGirar;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    transform-origin: 0 0;
+}
+
+#minutero
+{
+    position: absolute;
+    left: 50.8%;
+    top: 51%;
+    width: 10px;
+    height: 300px;  
+    background-color: black;
+    animation-name: segunderoGirar;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    transform-origin: 0 0;
+}
+
+#hora       
+{
+    position: absolute;
+    left: 50.8%;
+    top: 51%;
+    width: 20px;
+    height: 200px;  
+    background-color: black;
+    animation-name: segunderoGirar;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    transform-origin: 0 0;
+}
+
+@keyframes segunderoGirar
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+
